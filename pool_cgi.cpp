@@ -212,7 +212,7 @@ int run_child( int idx )
                         {
                             close( STDOUT_FILENO );
                             dup( sockfd );
-                            execl( users[sockfd].buf, users[sockfd].buf, 0 );
+                        //    execl( users[sockfd].buf, users[sockfd].buf, 0 );
                             exit( 0 );
                         }
                     }
